@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Flixster</string>
+    <string name="movie_overview_and_synopsis">Movie overview and synopsis</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="my_movie_title">My movie title</string>
+    <string name="here_is_the_synopsis">Here is the synopsis</string>
+    <string name="another_movie_synopsis">Another movie synopsis</string>
+    <string name="todo">TODO</string>
+</resources>
