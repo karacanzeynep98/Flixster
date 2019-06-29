@@ -14,6 +14,7 @@ public class Movie {
     String backdropPath;
     Double voteAverage;
     Integer id;
+    String popularity;
 
     //initialize from JSON data
     public Movie(JSONObject object) throws JSONException {
@@ -23,6 +24,8 @@ public class Movie {
         backdropPath = object.getString("backdrop_path");
         voteAverage = object.getDouble("vote_average");
         id = object.getInt("id");
+        popularity = object.getString("popularity");
+
     }
 
     public Movie(){}
@@ -48,4 +51,6 @@ public class Movie {
     public Double getVoteAverage() {
         return voteAverage;
     }
+
+    public String getPopularity() { return popularity; }
 }

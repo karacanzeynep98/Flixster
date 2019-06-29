@@ -54,6 +54,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     // the view objects
     TextView tvTitle;
     TextView tvOverview;
+    TextView popularityText;
     RatingBar rbVoteAverage;
     ImageView imgView;
 
@@ -66,6 +67,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvOverview = (TextView) findViewById(R.id.tvOverview);
         rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);
         imgView = (ImageView) findViewById(R.id.imageToVideo);
+        popularityText = (TextView) findViewById(R.id.popularityText);
         client = new AsyncHttpClient();
 
         // unwrap the movie passed in via intent, using its simple name as a key
@@ -78,6 +80,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         // set the title and overview
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
+        popularityText.setText(movie.getPopularity());
 
         // vote average is 0..10, convert to 0..5 by dividing by 2
         float voteAverage = movie.getVoteAverage().floatValue();

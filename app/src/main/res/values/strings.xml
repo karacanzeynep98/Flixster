@@ -6,4 +6,5 @@
     <string name="here_is_the_synopsis">Here is the synopsis</string>
     <string name="another_movie_synopsis">Another movie synopsis</string>
     <string name="todo">TODO</string>
+    <string name="movie_popularity">Movie Popularity</string>
 </resources>
